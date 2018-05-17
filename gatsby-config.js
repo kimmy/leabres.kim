@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "",
+    title: "Kim Leabres | Web Developer",
     author: "",
-    description: ""
+    description: "Kim Leabres' personal website"
   },
   pathPrefix: '/',
   plugins: [
