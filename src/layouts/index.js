@@ -1,14 +1,27 @@
 import React from "react";
-import Link from 'gatsby-link'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
 import '../assets/scss/main.scss'
 
-import Header from '../components/Header'
-
-export default ({ children }) => (
+export default ({ children, data }) => (
   <div className="template-wrapper">
+    <Helmet>
+      <title>{data.site.siteMetadata.title}</title>
+      <meta name="description" content={data.site.siteMetadata.description} />
+    </Helmet>
     <div>
-      {/* <Header /> */}
       {children()}
     </div>
   </div>
 );
+
+export const pageQuery = graphql`
+    query PageQuery {
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+    }
+`
