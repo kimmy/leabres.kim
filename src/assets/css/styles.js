@@ -1,25 +1,10 @@
+import React from "react";
 import { injectGlobal } from "react-emotion";
-
-const LatoBlackTTF = "../fonts/Lato-Black.ttf";
-const CaveatRegularTTF = "../fonts/Caveat-Regular.ttf";
+import "./fonts.css"
 
 injectGlobal`
   body {
     font-family: 'Lato', sans-serif;
-  }
-
-  @font-face {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lato Black"), local("Lato-Black"), url(${LatoBlackTTF}) format("ttf");
-  }
-
-  @font-face {
-    font-family: "Caveat", cursive;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Caveat Regular"), local("Caveat-Regular"), url(${CaveatRegularTTF}) format("ttf");
   }
 `;
 
