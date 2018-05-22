@@ -45,18 +45,7 @@
 
 /* Basic */
 
-  body {
-    background: _palette(bg);
-
-    &.is-loading {
-      *, *:before, *:after {
-        @include vendor('animation', 'none !important');
-        @include vendor('transition', 'none !important');
-      }
-    }
-  }
-
-  body, input, select, textarea {
+  input, select, textarea {
     color: _palette(fg);
     font-family: _font(family);
     font-size: 16pt;

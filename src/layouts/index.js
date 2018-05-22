@@ -8,6 +8,7 @@ export default ({ children, data }) => (
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
       <meta name="description" content={data.site.siteMetadata.description} />
+      <link rel="icon" type="image/png" href="./favicon.ico"/>
     </Helmet>
     <div>
       {children()}
