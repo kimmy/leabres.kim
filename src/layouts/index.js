@@ -8,7 +8,14 @@ export default ({ children, data }) => (
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
       <meta name="description" content={data.site.siteMetadata.description} />
-      <link rel="icon" type="image/png" href="./favicon.ico"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119529640-1"></script>
+      <script>
+        {` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119529640-1');`}
+      </script>
     </Helmet>
     <div>
       {children()}

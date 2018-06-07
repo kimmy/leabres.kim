@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Kim Leabres | Web Developer",
-    description: "Kim Leabres' personal website",
+    description: "The personal website of Kim Leabres, a Ruby on Rails developer.",
     siteUrl: "http://leabres.kim",
   },
   pathPrefix: '/',
