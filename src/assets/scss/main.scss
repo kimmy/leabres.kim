@@ -44,12 +44,16 @@
 
 /* Basic */
 
-  input, select, textarea {
+  body, input, select, textarea {
     color: _palette(fg);
     font-family: _font(family);
     font-size: 16pt;
     font-weight: _font(weight);
     line-height: 1.75em;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
   }
 
   a {

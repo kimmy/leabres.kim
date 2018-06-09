@@ -3,15 +3,6 @@ import { injectGlobal } from "react-emotion";
 import variables from "./lib/variables"
 import "./fonts.css"
 
-injectGlobal`
-  body {
-    font-family: ${variables.font.default};
-    background: ${variables.color.bg};
-    color: ${variables.color.text};
-  }
-
-`;
-
 const centerClass = `
   margin: 0 auto;
   position: absolute;
