@@ -2,12 +2,15 @@ import React from "react";
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import '../assets/scss/main.scss'
+import icon from '../../static/favicon.ico'
 
 export default ({ children, data }) => (
   <div className="template-wrapper">
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
       <meta name="description" content={data.site.siteMetadata.description} />
+      <link rel="icon" type= "image/png" href={icon} />
+
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119529640-1"></script>
       <script>
         {` window.dataLayer = window.dataLayer || [];
