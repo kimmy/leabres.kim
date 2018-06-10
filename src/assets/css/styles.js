@@ -18,9 +18,20 @@ const heading = `
   font-family: 'Caveat', cursive;
 `
 
+const icon = `
+  width: 30px;
+`
+
+const grid = `
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+`
+
 const classes = {
   centerClass,
-  heading
+  heading,
+  icon,
+  grid
 }
 
 export default classes

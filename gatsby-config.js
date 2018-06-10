@@ -20,6 +20,14 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sitemap`
-    }
+    },
+    {
+      resolve: `gatsby-plugin-svgr`,
+      options: {
+        icon: true,
+        viewBox: false,
+        // see https://github.com/smooth-code/svgr for a list of all options
+      },
+    },
   ],
 }
