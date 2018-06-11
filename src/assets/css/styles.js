@@ -69,12 +69,13 @@ const displayGrid = `
 `
 const wholeCard = `
   border-radius: 7px;
-  box-shadow: 0px 0px 15px -3px;
+  box-shadow: 0 10px 40px 0 rgba(97,4,95,0.07), 0 2px 9px 0 rgba(62,57,107,0.06);
   background-color: #fff;
   padding: 25px 20px 20px 20px;
-  transition: transform 0.4s;
+  transition: all 0.4s;
   :hover {
-    transform: rotateZ(-4deg);
+    box-shadow: 0 16px 32px 0 rgba(62, 57, 107, 0.18), 0 0 0 transparent;
+    transform: translate(0px, -5px)
   }
 `
 const card = `
