@@ -1,3 +1,4 @@
+import { shake } from "./animations"
 import "./fonts.css"
 
 const flexCenter = `
@@ -15,6 +16,9 @@ const heading = `
 
 const icon = `
   width: 30px;
+  :hover {
+    animation: ${shake} 0.82s cubic-bezier(.22,.68,.84,.34) both;
+  }
 `
 
 const grid = `

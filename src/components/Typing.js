@@ -13,5 +13,4 @@ const BlinkingCaret = styled('div')`
     ${animations.blink} 1s step-end infinite;
 `
 
-
 export default BlinkingCaret
