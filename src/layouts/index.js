@@ -3,6 +3,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import '../assets/scss/main.scss'
 import icon from '../../static/favicon.ico'
+import { css } from "emotion"
+import { color } from "../assets/css/lib/variables"
 
 class Template extends React.Component {
   render() {
@@ -24,7 +26,7 @@ class Template extends React.Component {
             gtag('config', 'UA-119529640-1');`}
           </script>
         </Helmet>
-        <div>
+        <div className={css({backgroundColor: color.lightBlue})}>
           {children()}
         </div>
       </div>

@@ -21,7 +21,7 @@ class HomeIndex extends React.Component {
   render() {
     return (
       <div className={css(styles.flexCenter)}>
-        <div>
+        <div className={css(styles.wholeCard)}>
           <div className={css(styles.card)}>
             <div>
               <span className={css(styles.heading)}>Hi! I'm <Colored color={variables.color.blue}>Kim</Colored>.</span>

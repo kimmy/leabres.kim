@@ -67,6 +67,16 @@ const grid = `
 const displayGrid = `
   display: grid;
 `
+const wholeCard = `
+  border-radius: 7px;
+  box-shadow: 0px 0px 15px -3px;
+  background-color: #fff;
+  padding: 25px 20px 20px 20px;
+  transition: transform 0.4s;
+  :hover {
+    transform: rotateZ(-4deg);
+  }
+`
 const card = `
   display: grid;
   justify-items: center;
@@ -81,7 +91,8 @@ const classes = {
   icon,
   grid,
   displayGrid,
-  card
+  card,
+  wholeCard
 }
 
 export default classes
