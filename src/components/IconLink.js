@@ -1,10 +1,14 @@
 import React from "react";
 import { css } from "emotion";
-import styles from "../assets/css/styles";
 
-const IconLink = (props) => (
-  <a href={props.link} target="_blank">
-    <img src={props.svg} width='30'/>
+const style = css`
+  line-height: 0;
+  padding: 5px;
+`
+
+const IconLink = ({ link, children }) => (
+  <a href={link} target="_blank" className={style}>
+    {children}
   </a>
 )
 
