@@ -1,4 +1,5 @@
 import { shake } from "./animations"
+import { color } from "./lib/variables"
 import "./fonts.css"
 
 const breakpoints = {
@@ -40,8 +41,14 @@ const heading = `
 `
 
 const icon = `
+  fill: ${color.text};
+  stroke: ${color.text};
   width: 30px;
   :hover {
+    .icon {
+      fill: ${color.blue};
+      stroke: ${color.blue};
+    }
     animation: ${shake} 0.82s cubic-bezier(.22,.68,.84,.34) both;
   }
   ${mq.xsmall(`

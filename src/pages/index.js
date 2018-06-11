@@ -29,9 +29,9 @@ class HomeIndex extends React.Component {
             <BlinkingCaret>And I'm a web developer.</BlinkingCaret>
           </div>
           <div className={css(styles.grid)}>
-            <IconLink link="https://github.com/kbleabres"><Github className={css(styles.icon)} color={variables.color.text} /></IconLink>
-            <IconLink link="mailto:hello@leabres.kim"><Mail className={css(styles.icon)} color={variables.color.text}/></IconLink>
-            <IconLink link="https://linkedin.com/in/kimleabres"><LinkedIn className={css(styles.icon)} color={variables.color.text}/></IconLink>
+            <IconLink link="https://github.com/kbleabres"><Github className={css(styles.icon)} /></IconLink>
+            <IconLink link="mailto:hello@leabres.kim"><Mail className={css(styles.icon)} /></IconLink>
+            <IconLink link="https://linkedin.com/in/kimleabres"><LinkedIn className={css(styles.icon)} /></IconLink>
           </div>
         </div>
       </div>
