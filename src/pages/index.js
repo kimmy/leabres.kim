@@ -22,16 +22,18 @@ class HomeIndex extends React.Component {
     return (
       <div className={css(styles.flexCenter)}>
         <div>
-          <div>
-            <span className={css(styles.heading)}>Hi! I'm <Colored color={variables.color.blue}>Kim</Colored>.</span>
-          </div>
-          <div className={css(styles.displayGrid)}>
-            <BlinkingCaret>And I'm a web developer.</BlinkingCaret>
+          <div className={css(styles.card)}>
+            <div>
+              <span className={css(styles.heading)}>Hi! I'm <Colored color={variables.color.blue}>Kim</Colored>.</span>
+            </div>
+            <div className={css(styles.displayGrid)}>
+              <BlinkingCaret>And I'm a web developer.</BlinkingCaret>
+            </div>
           </div>
           <div className={css(styles.grid)}>
-            <IconLink link="https://github.com/kbleabres"><Github className={css(styles.icon)} color={variables.color.text} /></IconLink>
-            <IconLink link="mailto:hello@leabres.kim"><Mail className={css(styles.icon)} color={variables.color.text}/></IconLink>
-            <IconLink link="https://linkedin.com/in/kimleabres"><LinkedIn className={css(styles.icon)} color={variables.color.text}/></IconLink>
+            <IconLink link="https://github.com/kbleabres"><Github className={css(styles.icon)} /></IconLink>
+            <IconLink link="mailto:hello@leabres.kim"><Mail className={css(styles.icon)} /></IconLink>
+            <IconLink link="https://linkedin.com/in/kimleabres"><LinkedIn className={css(styles.icon)} /></IconLink>
           </div>
         </div>
       </div>
