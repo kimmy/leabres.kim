@@ -67,13 +67,21 @@ const grid = `
 const displayGrid = `
   display: grid;
 `
+const card = `
+  display: grid;
+  justify-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 10px;
+`
 
 const classes = {
   flexCenter,
   heading,
   icon,
   grid,
-  displayGrid
+  displayGrid,
+  card
 }
 
 export default classes
