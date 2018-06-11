@@ -27,6 +27,11 @@ const shake = keyframes`
     transform: translate3d(3px, 0px, 0);
   }
 `
+const spin = keyframes`
+  0% { transform: rotate(0deg); }
+  100% { @include transform: rotate(360deg); }
+`
+
 const animations = { blink, typing, shake }
 
 export default animations
