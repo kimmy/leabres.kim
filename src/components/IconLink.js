@@ -6,11 +6,22 @@ const style = css`
   padding: 5px;
 `
 
-const IconLink = ({ link, children }) => (
-  <a href={link} target="_blank" className={style}>
-    {children}
-  </a>
-)
+class IconLink extends React.Component {
+  render() {
+    const { link, children, target } = this.props
+    const targetValue = (target) => {
+      if (target == 'true') {
+        return "_blank"
+      }
+    }
+
+    return (
+      <a href={link} target={targetValue(target)} className={style}>
+        {children}
+      </a>
+    )
+  }
+}
 
 export default IconLink
 

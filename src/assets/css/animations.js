@@ -32,7 +32,16 @@ const spin = keyframes`
   100% { @include transform: rotate(360deg); }
 `
 
-const animations = { blink, typing, shake }
+const ring = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`
+
+const animations = { blink, typing, shake, ring }
 
 export default animations
 

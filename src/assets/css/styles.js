@@ -1,28 +1,8 @@
 import { shake } from "./animations"
 import { color } from "./lib/variables"
+import { mq } from "./lib/breakpoints"
+
 import "./fonts.css"
-
-const breakpoints = {
-  xsmall: 480,
-  small: 736,
-  medium: 980,
-  large: 1280,
-  xlarge: 1800,
-}
-
-const mq = Object.keys(breakpoints).reduce(
-  (accumulator, label) => {
-    let prefix = typeof breakpoints[label] === 'string' ? '' : 'max-width:'
-    let suffix = typeof breakpoints[label] === 'string' ? '' : 'px'
-    accumulator[label] = cls =>
-      `@media (${prefix + breakpoints[label] + suffix}) {
-          ${cls};
-        }
-      `
-    return accumulator
-  },
-  {}
-)
 
 const flexCenter = `
   display: flex;
@@ -64,6 +44,10 @@ const grid = `
   align-items: center;
 `
 
+const formGrid = `
+  display: grid;
+`
+
 const displayGrid = `
   display: grid;
 `
@@ -75,13 +59,19 @@ const card = `
   margin: 10px;
 `
 
+const link = `
+  line-height: 0;
+  padding: 5px;
+`
+
 const classes = {
   flexCenter,
   heading,
   icon,
   grid,
   displayGrid,
-  card
+  card,
+  link,
 }
 
 export default classes
