@@ -60,8 +60,12 @@ const submit = `
     background: linear-gradient(to bottom,
                 rgba(33,150,243,0.4),
                 rgba(33,150,243,0.6));
-    :hover {
+    :hover:not([disabled]) {
       box-shadow: inset 0 0px 5px 0 hsla(0, 0%, 45%, 0.2);
+    }
+    :disabled {
+      cursor: auto;
+      background: ${color.text}
     }
   }
 `
@@ -84,9 +88,6 @@ const loader = `
     animation: ${ring} 1.2s linear infinite;
   }
 `
-const error = `
-  border-color: red;
-`
 
 const formStyles = {
   grid,
@@ -101,7 +102,6 @@ const formStyles = {
   content,
   page,
   loader,
-  error
 }
 
 export default formStyles
