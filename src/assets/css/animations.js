@@ -1,5 +1,4 @@
-import React from "react";
-import styled, { keyframes } from 'react-emotion'
+import { keyframes } from '@emotion/core'
 
 const blink = keyframes`
   from, to { border-color: transparent }

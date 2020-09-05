@@ -1,5 +1,3 @@
-import React from "react";
-
 const font = {
   default: "'Lato', sans-serif",
   code: "'Courier New', monospace"

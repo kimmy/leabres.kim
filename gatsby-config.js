@@ -7,8 +7,16 @@ module.exports = {
   pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -17,9 +25,6 @@ module.exports = {
         anonymize: true,
         respectDNT: true,
       },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`
     },
   ],
 }
