@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "author": "Kim Leabres",
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
     "gatsby": "^2.24.53",
@@ -14,7 +16,11 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sitemap": "^2.4.12",
-    "react-emotion": "^10.0.0"
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "webpack": "^4.44.1"
   },
   "keywords": [
     "gatsby"

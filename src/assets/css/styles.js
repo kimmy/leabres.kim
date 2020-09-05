@@ -1,6 +1,9 @@
-import { shake } from "./animations"
-import { color } from "./lib/variables"
+import animations from "./animations"
+import variables from "./lib/variables"
 import "./fonts.css"
+
+const { color } = variables
+const { shake } = animations
 
 const breakpoints = {
   xsmall: 480,

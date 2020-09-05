@@ -1,5 +1,4 @@
-import React from "react"
-import styled from "react-emotion"
+import styled from '@emotion/styled'
 import animations from "../assets/css/animations.js"
 
 const BlinkingCaret = styled('div')`
