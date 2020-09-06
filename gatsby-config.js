@@ -7,8 +7,10 @@ module.exports = {
   pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-emotion`,
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
