@@ -33,6 +33,9 @@ const flexCenter = `
   justify-content: center;
   align-items: center;
   height: 100vh;
+  ${mq.small(`
+    height: 80vh;
+  `)};
 `
 
 const heading = `
