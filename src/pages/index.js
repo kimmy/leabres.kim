@@ -27,7 +27,7 @@ class HomeIndex extends React.Component {
               </div>
             </div>
             <div css={css(styles.grid)}>
-              <IconLink link="https://github.com/kbleabres"><Github css={css(styles.icon)} /></IconLink>
+              <IconLink link="https://github.com/kimmy"><Github css={css(styles.icon)} /></IconLink>
               <IconLink link="mailto:hello@leabres.kim"><Mail css={css(styles.icon)} /></IconLink>
               <IconLink link="https://linkedin.com/in/kimleabres"><LinkedIn css={css(styles.icon)} /></IconLink>
             </div>
